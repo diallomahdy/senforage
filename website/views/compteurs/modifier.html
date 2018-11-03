@@ -1,0 +1,32 @@
+<div class="panel panel-default">
+    <div class="panel-heading text-center"><h4>Modifier un compteur</h4></div>
+    <form id="form" method="POST" class="form-horizontal margin-5pc text-center">
+        <input type="hidden" name="id" id="id">
+        <div class="form-group">
+            <label class="control-label col-4">Numéro du compteur</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="numero" id="numero" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-4">Etat du compteur</label>
+            <div class="col-7">
+                <select class="form-control" name="idEtatCompteur" id="etatCompteur"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-4">Pointeur</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="pointeur" id="pointeur" placeholder="Saisir la quantité d'eau sur le compteur" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-7 col-offset-4">
+                <button type="submit" class="btn btn-primary float_left"><i class="glyphicon glyphicon-log-in"></i> Modifier </button>
+            </div>
+        </div>
+    </form>
+    <div class="margin-20px clearfix align-content-center">
+        <a href="compteurs" class="btn btn-primary"><i class="glyphicon glyphicon-log-in"></i> Retour </a>
+    </div>
+</div>

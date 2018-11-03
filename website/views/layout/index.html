@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Senforage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/fusion.css">
+    </head>
+    <body>
+        <div class="resp-col-8 col-offset-2 margin-v-30px panel panel-primary">
+            <a class="navbar-brand" href="">Senforage</a>
+            <div class="panel-heading"><h1> <div class="float_left"> Senforage </div> <div class="align-content-center"> Gestion forages </div> </h1></div>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="">Accueil</a></li>
+                            <!-- <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Gestion des villages <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="villages">Villages</a></li>
+                                    <li><a href="chefs">Chefs de villages</a></li>
+                                </ul>
+                            </li> -->
+                            <li><a href="villages">Villages</a></li>
+                            <li><a href="chefs">Chefs de villages</a></li>
+
+                            <li><a href="clients">Clients</a></li>
+                            <li><a href="abonnements">Abonnements</a></li>
+                            <li><a href="compteurs">Compteurs</a></li>
+
+                            <li><a href="tarification">Tarification</a></li>
+                            <li><a href="consommations">Consommations</a></li>
+                            <!-- <li><a href="factures">Factures</a></li> -->
+                            <li><a href="reglements">Réglements</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="panel-body">
+                <div id="statusMsg" class="col-11 align-block-center align-content-center margin-3pc"> </div>
+                <content></content>                
+            </div>
+            <div class="panel-footer align-content-center">Senforage 2018</div>
+        </div>
+    </body>
+</html>

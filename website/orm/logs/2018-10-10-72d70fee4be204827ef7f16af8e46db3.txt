@@ -1,0 +1,39 @@
+Time : 22:05:52
+SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`senforage`.`facture`, CONSTRAINT `facture_ibfk_1` FOREIGN KEY (`idConsommation`) REFERENCES `consommation` (`id`))
+Raw SQL : DELETE FROM Consommation WHERE id=7 LIMIT 1
+
+Time : 21:03:44
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'idtTarif' in 'field list'
+Raw SQL : INSERT INTO Consommation(idCompteur,idtTarif,quantiteChiffre,quantiteLettre,date) VALUES(?,?,?,?,?)
+
+Time : 21:00:25
+SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`senforage`.`consommation`, CONSTRAINT `consommation_ibfk_2` FOREIGN KEY (`idTarif`) REFERENCES `tarif` (`id`))
+Raw SQL : INSERT INTO Consommation(idCompteur,quantiteChiffre,quantiteLettre,date) VALUES(?,?,?,?)
+
+Time : 20:59:10
+SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`senforage`.`consommation`, CONSTRAINT `consommation_ibfk_2` FOREIGN KEY (`idtTarif`) REFERENCES `tarif` (`id`))
+Raw SQL : INSERT INTO Consommation(idCompteur,quantiteChiffre,quantiteLettre,date) VALUES(?,?,?,?)
+
+Time : 19:31:34
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'senforage.abbonement' doesn't exist
+Raw SQL : SELECT * FROM abbonement ORDER BY id DESC
+
+Time : 18:26:53
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3' for key 'idEtatCompteur'
+Raw SQL : INSERT INTO Compteur(idEtatCompteur,numero,pointeur) VALUES(?,?,?)
+
+Time : 18:26:35
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3' for key 'idEtatCompteur'
+Raw SQL : INSERT INTO Compteur(idEtatCompteur,numero,pointeur) VALUES(?,?,?)
+
+Time : 17:52:34
+SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`senforage`.`client`, CONSTRAINT `client_ibfk_2` FOREIGN KEY (`idChef`) REFERENCES `Chef` (`id`))
+Raw SQL : INSERT INTO Client(idVillage,telephone) VALUES(?,?)
+
+Time : 17:30:09
+SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`senforage`.`chef`, CONSTRAINT `chef_ibfk_1` FOREIGN KEY (`idVillage`) REFERENCES `village` (`id`))
+Raw SQL : INSERT INTO Chef(prenom,nom) VALUES(?,?)
+
+Time : 17:14:51
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'senforage.chefdevillage' doesn't exist
+Raw SQL : SELECT * FROM chefdevillage ORDER BY id DESC

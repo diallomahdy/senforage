@@ -1,0 +1,38 @@
+<div class="panel panel-default">
+    <div class="panel-heading text-center"><h4>Ajouter une consommation</h4></div>
+    <form id="form" method="POST" class="form-horizontal margin-5pc text-center">
+        <div class="form-group">
+            <label class="control-label col-4">Compteurs</label>
+            <div class="col-7">
+                <select class="form-control" name="idCompteur" id="compteurs"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-4">Quantité d'eau consommé en chiffre</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="quantiteChiffre" placeholder="Nombre de litre en chiffre" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-4">Quantité d'eau consommé en lettre</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="quantiteLettre" placeholder="Nombre de litre en lettre" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-4">Date</label>
+            <div class="col-7">
+                <input type="date" class="form-control" name="date" placeholder="JJ/MM/AAAA" required>
+            </div>
+        </div>
+        <div id="statusMsg" class="col-11 align-block-center"> </div>
+        <div class="form-group">
+            <div class="col-7 col-offset-4">
+                <button type="submit" id="submit_btn" class="btn btn-primary float_left"><i class="glyphicon glyphicon-log-in"></i> Ajouter </button>
+            </div>
+        </div>
+    </form>
+    <div class="margin-20px clearfix align-content-center">
+        <a href="consommations" class="btn btn-primary"><i class="glyphicon glyphicon-log-in"></i> Retour </a>
+    </div>
+</div>

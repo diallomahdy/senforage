@@ -1,0 +1,7 @@
+Time : 13:54:11
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'senforage.reglement' doesn't exist
+Raw SQL : REPLACE INTO Reglement(id,idFacture,datePaiement) VALUES(?,?,?)
+
+Time : 13:02:19
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'senforage.reglement' doesn't exist
+Raw SQL : SELECT * FROM reglement ORDER BY id DESC

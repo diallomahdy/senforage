@@ -1,0 +1,32 @@
+<div class="panel panel-default">
+    <div class="panel-heading text-center"><h4>Ajouter un client</h4></div>
+    <form id="form" method="POST" class="form-horizontal margin-5pc text-center">
+        <div class="form-group">
+            <label class="control-label col-4">Nom de famille</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="nomFamille" placeholder="Nom de famille" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-4">Village</label>
+            <div class="col-7">
+                <select class="form-control" name="idVillage" id="idVillage"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-4">Téléphone</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="telephone" placeholder="Téléphone" required>
+            </div>
+        </div>
+        <div id="statusMsg2" class="col-11 align-block-center"> </div>
+        <div class="form-group">
+            <div class="col-7 col-offset-4">
+                <button type="submit" id="submit_btn" class="btn btn-primary float_left"><i class="glyphicon glyphicon-log-in"></i> Ajouter </button>
+            </div>
+        </div>
+    </form>
+    <div class="margin-20px clearfix align-content-center">
+        <a href="clients" class="btn btn-primary"><i class="glyphicon glyphicon-log-in"></i> Retour </a>
+    </div>
+</div>

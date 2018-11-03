@@ -1,0 +1,19 @@
+Time : 05:27:23
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '8' for key 'PRIMARY'
+Raw SQL : INSERT INTO Compteur(id,idEtatCompteur,numero,pointeur) VALUES(?,?,?,?)
+
+Time : 04:05:41
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '8' for key 'PRIMARY'
+Raw SQL : INSERT INTO Reglement(id,idFacture,datePaiement) VALUES(?,?,?)
+
+Time : 02:04:46
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'isCompteur' in 'where clause'
+Raw SQL : SELECT * FROM consommation WHERE isCompteur=? ORDER BY id DESC
+
+Time : 02:04:38
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'isCompteur' in 'where clause'
+Raw SQL : SELECT * FROM consommation WHERE isCompteur=? ORDER BY id DESC
+
+Time : 02:03:35
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'isCompteur' in 'where clause'
+Raw SQL : SELECT * FROM consommation WHERE isCompteur=? ORDER BY id DESC

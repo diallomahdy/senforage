@@ -1,0 +1,31 @@
+<div id="vue_lister" class="panel panel-default">
+    <div class="panel-heading text-center"><h4>Tarification</h4></div>
+    
+    <form id="form" method="POST" class="form-horizontal margin-5pc text-center">
+        <div class="form-group">
+            <div class="col-2 col-offset-1">
+                <label class="control-label">Tarif actuel</label>
+            </div>
+            <div class="col-3 col-offset-1">
+                <input type="text" class="form-control col-6 align-inner-right" name="prixLitre" id="prixLitre" required>
+                <label class="control-label">FCFA / Litre</label>
+            </div>
+            <div class="col-2 col-offset-1">
+                <button type="submit" id="submit_btn" class="btn btn-primary"><i class="glyphicon glyphicon-log-in"></i> Mettre à jour </button>
+            </div>
+        </div>
+    </form>
+    
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Identifiant</th>
+                    <th>prix</th>
+                    <th>date</th>
+                </tr>
+            </thead>
+            <tbody id="list"></tbody>
+        </table>
+    </div>
+</div>

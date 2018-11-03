@@ -1,0 +1,73 @@
+<div id="vue_lister" class="panel panel-default">
+    <div class="panel-heading text-center"><h4>Paiement factures</h4></div>
+    <div class="panel-body margin-20px">
+        <div>
+            <form method="POST">
+                <div class="form-group">
+                    <label class="control-label col-4">Numéro facture</label>
+                    <div class="col-4">
+                        <input type="text" class="form-control" name="facture" placeholder="Saisir le numéro de la facture" required>
+                    </div>
+                    <div class="col-4">
+                        <button type="submit" id="submit_btn" class="btn btn-primary float_left"><i class="glyphicon glyphicon-search"></i> Poursuivre </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="padding-t-20px">
+            <form method="POST">
+                <div class="form-group">
+                    <label class="control-label col-4">ou Numéro compteur</label>
+                    <div class="col-4">
+                        <input type="text" class="form-control" name="compteur" placeholder="Saisir le numéro du compteur" required>
+                    </div>
+                    <div class="col-4">
+                        <button type="submit" id="submit_btn" class="btn btn-primary float_left"><i class="glyphicon glyphicon-search"></i> Poursuivre </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="vue_lister" class="panel panel-default margin-t-50px">
+    <div class="panel-heading text-center">
+        <h4>Générer toutes les factures
+            <form method="POST" class="float_right margin-r-10pc">
+                <button type="submit" name="generateFacture" class="btn btn-primary"><i class="glyphicon glyphicon-play"></i> Générer </button>
+            </form>
+        </h4>
+    </div>
+</div>
+
+<div id="vue_lister" class="panel panel-default margin-t-50px">
+    <div class="panel-heading text-center">
+        <h4>Couper tous les compteurs pas en régle
+            <form method="POST" class="float_right margin-r-10pc">
+                <button type="submit" name="couperCompteur" class="btn btn-primary"><i class="glyphicon glyphicon-eject"></i> Couper </button>
+            </form>
+        </h4>
+    </div>
+</div>
+
+<div id="vue_lister" class="panel panel-default margin-t-50px">
+    <div class="panel-heading text-center"><h4>Listes des factures</h4></div>
+    <div class="margin-20px clearfix align-content-center">
+
+    </div>
+    <form method="POST">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Identifiant</th>
+                    <th>Facture</th>
+                    <th>Compteur</th>
+                    <th>Consommation</th>
+                    <th>Montant</th>
+                    <th>Etat</th>
+                </tr>
+            </thead>
+            <tbody id="list"></tbody>
+        </table>
+    </form>
+</div>

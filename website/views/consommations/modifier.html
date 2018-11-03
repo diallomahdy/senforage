@@ -1,0 +1,32 @@
+<div class="panel panel-default">
+    <div class="panel-heading text-center"><h4>Modifier un abonnement</h4></div>
+    <form id="form" method="POST" class="form-horizontal margin-5pc text-center">
+        <input type="hidden" name="id" id="id">
+        <div class="form-group">
+            <label class="control-label col-4">Quantité d'eau consommé en chiffre</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="quantiteChiffre" id="quantiteChiffre" placeholder="Nombre de litre en chiffre" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-4">Quantité d'eau consommé en lettre</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="quantiteLettre" id="quantiteLettre" placeholder="Nombre de litre en lettre" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-4">Date</label>
+            <div class="col-7">
+                <input type="date" class="form-control" name="date" id="date" placeholder="JJ/MM/AAAA" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-7 col-offset-4">
+                <button type="submit" class="btn btn-primary float_left"><i class="glyphicon glyphicon-log-in"></i> Modifier </button>
+            </div>
+        </div>
+    </form>
+    <div class="margin-20px clearfix align-content-center">
+        <a href="consommations" class="btn btn-primary"><i class="glyphicon glyphicon-log-in"></i> Retour </a>
+    </div>
+</div>
